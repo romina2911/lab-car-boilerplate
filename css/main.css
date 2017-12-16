@@ -1,21 +1,7 @@
 /* Los estilos de tu proyecto */
 
-.logo{
-    top: 3rem;
-    position: relative;
-    
-}
+/*Header*/
 
-.menu-list{
-    left: 90rem;
-    position: relative;
-    
-}
-
-li{
-    padding: 1rem;
-    bottom: 1rem;
-}
-.navwhite{
+.navbar{
     background-color: white;
 }
