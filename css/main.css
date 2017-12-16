@@ -16,5 +16,19 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    display: flex;
     height: 100vh;
    }
+   
+.flex-container {
+    background: rgb(255,193,7);
+    height: 17rem;
+    width: 22rem;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center
+ }
+
+
