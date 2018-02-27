@@ -11,83 +11,185 @@
     <title>Lab car</title>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <!-- Para Mobile -->
-        <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse"
-                  data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Desplegar navegación</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/logoForma.png" class="logo" alt="logo">
-          </a>
-        </div>
-          <!-- Para Desktop-->
-    <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Viaja</a></li>
-        <li><a href="#">Conduce</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Inicia Sesión<b class="caret"></b>
-          </a>
-        </li>
-      </ul>
-      </div>
-    </div>
+    <!-- Navbar-Header -->
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row navbar-header logo-flex">
+              <!-- menu hamburguesa - movil -->
+              <button type="button" class="navbar-toggle  collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span cass="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!--logo-->
+              <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="assets/images/logoForma.png">
+              </a>
+            </div>
+            <div class="navbar-collapse navbar-right nav-collapse-list collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav navbar-right">
+  
+                <li><a href="#">Viaja</a></li>
+                <li><a href="#">Conduce</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Inicia sesion</a></li>
+                
+              </ul>
+            </div>
+          </div>
+         </nav>
+      </header>
+    <!--travel-->
     <section class="taxi">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
-            <div class="taxi-img"></div>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4">
-          <div class="flex-container">
-            <h2>Comienza a viajar con</h2>
-            <img src="assets/images/logoBlanco.png" alt="logoblaco">
-            <button type="button" class="btn download">Descarga el app</button>
+        <div class="container-fluid img-travel-labcar">
+          <div class="row ">
+            <div class="col-md-12 container-labcar">
+              <!--mobile-->
+               <div class="visible-xs">
+                 <h1>Comienza a viajar</h1>
+                 <h1> con <img src="assets/images/logoBlanco.png"></h1>
+                 <button type="button" class="btn btn-default  visible-xs">Descarga el app</button>
+              </div> 
+              <!--desktop-->
+              <div class="hidden-xs">
+                  <h3>Disfruta del viaje</h3>
+                  <h3>Eres dueño de tu tiempo</h3>
+                  <h4>Viaja con
+                      <img src="assets/images/logoBlanco.png">
+                  </h4>
+                  <button class="btn btn-default btn-sm" type="submit">REGISTRATE</button>
+                  <h5 class="line">O bien</h5>
+                  <button class="btn btn-default btn-sm" type="submit">Conviértete en conductor</button>
+              </div>         
           </div>
         </div>
-     </div>
+      </div>       
+    <!-- information -->
+    <section>
+        <div class="container-fluid">
+            <div class="row container-information">
+                  <div class="col-sm-12  ">
+                      <!-- version mobile -->
+                      <div class="visible-xs marco">
+                          <h2>La nueva app</h2>
+                          <img src="assets/images/iPhone6Plus.png" class="img-responsive center-block" alt="Iphone 6 plus">
+              
+                      </div>
+                      <div class="visible-xs">
+                              <h3 class="text-left">Llega a tu destino aún más rápido</h3>
+                      </div>
+                        <!-- version desktop -->
+                      <div class="col-md-10 hidden-xs marco">
+                              <img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="Iphone 6 plus">
+                              <div class="col-xs-5 text-left">
+                                  <h2>Descarga la nueva app</h2>
+                                   <p>
+                                      La versión actualizada de LabCar esta llena de nuevas funciones para llegar a donde 
+                                      tu quieras aún más fácil y rápido.
+                                  </p>
+                                  <p> 
+                                      solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes; tu conductor sabe exactamente
+                                      a dónde ir.
+                                  </p>
+                              </div>
+                      </div>
+                  </div>
+                         
+            </div>
+        </div>
     </section>
-      <section class="app">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-12 colg-lg-12 ">
-              <img src="assets/images/iPhone6Plus.png" alt="iphone">
-              <h3>La nueva app</h3>
-            </div>
-          </div>
-          </div>
-        </section>
-        <section class="driver">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-md-12 col-lg-12">
-                  <h2>Conduce cuando quieras</h2>
-                  <h3>LabCar es una opcion flexible para alcanzar tus metas financieras</h3>
-                  <button type"button" class="btn btmdrive">convierte en conductor</button>
+        <!-- driver -->
+      <section>
+          <div class="container-fluid img-conductor">
+              <div class="row">
+                  <div class="col-sm-12 container-conductor">
+                          <h3>Conduce cuando quieras</h3>
+                          <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                          <button class="btn btn-default" type="submit">Conviértete en conductor</button>
+                  </div>
+  
               </div>
-            </div>
           </div>
         </section>
-        <section class="prices">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-md-12 col-lg-12">
+         <!--prices -->
+      <section >
+          <div class="container-fluid">
+            <div class="row container-maps">
+              <div class="col-xs-12 col-md-6">
                 <h2>Tarifas</h2>
-                <h3>Consulta las tarifas Labcar aquí</h3>
-                <button type="button" class="btn btn-warning btn-yellow">Ingrese su punto de partida</button>
-                <button type="button" class="btn btn-warning btn-yellow">Ingrese su destino/button>
-                  <button type"button" class="btn btmdrive">convierte en conductor</button>
+                <p>Consulta las tarifas LabCar aquí</p>
+                <form>
+                  <div class="form-group">
+                      <img src="assets/images/shape.png" alt="icono-inicio">
+                    <input class="direction" type="partida" class="form-control input-style"  placeholder="Ingrese punto de partida">
+                  </div>
+                  <div class="form-group">
+                      <img  src="assets/images/shape2.png" alt="icono-fin">
+                    <input  class="direction" type="fin" class="form-control input-style" placeholder="Ingrese destino">
+                  </div>
+                </form>
+                <button class="btn btn-default bd-none" type="submit">¡TRAZAR RUTA!</button>
+              </div>
+
+              <div class="col-xs-10 col-md-4 map">
+                  <img class="img-responsive hidden-xs" src="assets/images/googlemap.jpg" alt="">
+                  <img class="img-responsive visible-xs" src="assets/images/googlemap.jpg" alt="">
               </div>
             </div>
+          <!-- footer -->
+      <footer>
+          <div class="container-fluid">
+              <div class="row container-footer">
+                   <div class="col-xs-12 col-md-12">
+                          <img  class ="img-responsive logo-lab col-md-offset-1" src="assets/images/logoBlanco.png" alt="logo">
+                          <hr>
+                           <div class="row">
+                               
+                               <div class="col-xs-3 col-md-3 col-md-offset-3 col-sm-offset-3">
+                                   <ul class="list-unstyled">
+                                       <li>Viaja</li>
+                                       <li>Conduce</li>
+                                       <li>Ciudades</li>
+                                       <li>Ciudades</li>
+                                       <li>Entregas</li>
+                                       <li>¿Cómo funciona?</li>
+                                       <li>Países</li>
+                                       <li>Seguridad</li>
+                                   </ul>
+                               </div>
+                               <div class="row hidden-xs col-md-offset-3 col-sm-offset-3">
+                                       <div class="footer-list2">
+                                           <ul class="list-unstyled">
+                                               <li>Oportunidades</li>
+                                               <li>Nuestra historia</li>
+                                               <li>API de LabCar</li>
+                                               <li>Eventos</li>
+                                               <li>Desarrolladores</li>
+                                               <li>Servicios</li>
+                                               <li>Laboratoria</li>
+                                               <li>Coders</li>
+                                           </ul>
+                                       </div>
+                               </div>        
+                               <div class="col-xs-offset-3 col-xs-4 col-md-4">
+                                   <ul class="list-inline">
+                                       <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                       <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                       <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                                       <li><i class="fa fa-apple" aria-hidden="true"></i></li>
+                                       <li><i class="fa fa-play" aria-hidden="true"></i></li>
+                                   </ul>
+                                   <img class = "logo-store class img-responsive" src="assets/images/enBadgeWebGeneric.png" alt="google Play">
+                                   <img  class ="img-responsive" src="assets/images/appstore.png" alt="app store">
+                               </div>
+                       
+                           </div>
+                       </div>
+                           
+                  </div>
           </div>
-        </section>
+      </footer>
     
      
 
